@@ -12,24 +12,38 @@ namespace LinkedListProblems
         public void Add(int data)
         {
             Node node = new Node(data);
-            if(this.head == null)
+            if (this.head == null)
             {
                 this.head = node;
             }
             else
             {
                 Node temp = head;
-                while(temp.next != null)
+                while (temp.next != null)
                 {
                     temp = temp.next;
                 }
                 temp.next = node;
             }
         }
+        public void AddInReverseList(int data)
+        {
+            Node newNode = new Node(data);
+            if (this.head == null)
+            {
+                this.head = newNode;
+            }
+            else
+            {
+                Node temp = this.head;
+                head = newNode;
+                head.next = temp;
+            }
+        }
         internal void Display()
         {
             Node temp = this.head;
-            if(temp == null)
+            if (temp == null)
             {
                 Console.WriteLine("No Data In LinkedList");
             }
