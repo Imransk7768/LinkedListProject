@@ -26,6 +26,18 @@ namespace LinkedListProblems
                 temp.next = node;
             }
         }
+        public void Append(int data)
+        {
+            Node node = new Node(data);
+            Node temp = head;
+            while (temp.next != null)
+            {
+                temp = temp.next;
+            }
+            temp.next = node;
+            Console.WriteLine("Append Data into Linked List is:  " + node.data);
+            Display();
+        }
         public void AddInReverseList(int data)
         {
             Node newNode = new Node(data);
@@ -40,7 +52,7 @@ namespace LinkedListProblems
                 head.next = temp;
             }
         }
-        internal void Display()
+        public void Display()
         {
             Node temp = this.head;
             if (temp == null)
