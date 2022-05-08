@@ -13,7 +13,7 @@ namespace LinkedListProblems
             Console.WriteLine(">>>>  Welcome to LisnkedList Project  <<<<");
             LinkedList list = new LinkedList();
             bool check = true;
-            Console.WriteLine("1. Display \n2. Add Data\n3. Add in Reverse\n4. Append Data \n");
+            Console.WriteLine("1. Display \n2. Add Data\n3. Add in Reverse\n4. Insert it Particular Positio \n");
             while (check)
             {
                 Console.WriteLine(" >>>>  Choose Option to Execute  <<<< ");
@@ -39,11 +39,11 @@ namespace LinkedListProblems
                         list.AddInReverseList(56);
                         break;
                     case 4:
-                        Console.WriteLine("Append 56,30 & 70.");
-                        list.Append(56);
-                        list.Append(30);
-                        list.Append(70);
-                        Console.WriteLine("Data Present in LinkedList");
+                        list.Add(56);
+                        list.Add(70);
+                        int a = list.Search(56);
+                        list.InsertAtParticularPosition(a + 1, 30);
+                        list.Display();
                         break;
                     default:
                         check = false;
