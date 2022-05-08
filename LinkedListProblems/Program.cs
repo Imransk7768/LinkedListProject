@@ -1,2 +1,21 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine(">>>>  Welcome to LisnkedList Project  <<<<");
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LinkedListProblems
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine(">>>>  Welcome to LisnkedList Project  <<<<");
+            LinkedList list=new LinkedList();
+            list.Add(56);
+            list.Add(30);
+            list.Add(70);
+            list.Display();
+        }
+    }
+}
