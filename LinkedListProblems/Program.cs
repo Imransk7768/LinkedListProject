@@ -13,7 +13,8 @@ namespace LinkedListProblems
             Console.WriteLine(">>>>  Welcome to LisnkedList Project  <<<<");
             LinkedList list = new LinkedList();
             bool check = true;
-            Console.WriteLine("1. Display \n2. Add Data\n3. Add in Reverse\n4. Insert it Particular Position\n5. Delete First Element\n6. Delete last Element \n");
+            Console.WriteLine("1. Display \n2. Add Data\n3. Add in Reverse\n4. Insert it Particular Position\n" +
+                "5. Delete First Element\n6. Delete last Element\n7. Search \n8. Insert at Particular Place \n");
             while (check)
             {
                 Console.WriteLine(" >>>>  Choose Option to Execute  <<<< ");
@@ -55,6 +56,14 @@ namespace LinkedListProblems
                         Console.WriteLine("Search Element in Node ");
                         int ele = list.Search(30);
                         Console.WriteLine("Elements Present : " + ele);
+                        list.Display();
+                        break;
+                    case 8:
+                        list.Add(56);
+                        list.Add(30);
+                        list.Add(70);
+                        int addNew = list.Search(30);
+                        list.InsertAtParticularPosition(addNew + 1, 40);
                         list.Display();
                         break;
                     default:
