@@ -14,7 +14,7 @@ namespace LinkedListProblems
             LinkedList list = new LinkedList();
             bool check = true;
             Console.WriteLine("1. Display \n2. Add Data\n3. Add in Reverse\n4. Insert it Particular Position\n" +
-                "5. Delete First Element\n6. Delete last Element\n7. Search \n8. Insert at Particular Place \n");
+                "5. Delete First Element\n6. Delete last Element\n7. Search \n8. Insert at Particular Position\n9. Delete at Particular Position \n");
             while (check)
             {
                 Console.WriteLine(" >>>>  Choose Option to Execute  <<<< ");
@@ -64,6 +64,17 @@ namespace LinkedListProblems
                         list.Add(70);
                         int addNew = list.Search(30);
                         list.InsertAtParticularPosition(addNew + 1, 40);
+                        list.Display();
+                        break;
+                    case 9:
+                        list.Add(56);
+                        list.Add(30);
+                        list.Add(70);
+                        int node = list.Search(30);
+                        list.InsertAtParticularPosition(node + 1, 40);
+                        list.Display();
+                        list.DeleteNodeAtParticularPosition(node + 1);
+                        Console.WriteLine("\nElement Deleted.");
                         list.Display();
                         break;
                     default:
