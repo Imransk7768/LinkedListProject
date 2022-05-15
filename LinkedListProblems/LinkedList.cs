@@ -108,5 +108,14 @@ namespace LinkedListProblems
             prev.next = newestNode;
             return this.head;
         }
+        public Node DeleteFirstNode()
+        {
+            if (this.head == null)
+            {
+                return null;
+            }
+            this.head = this.head.next;
+            return this.head;
+        }
     }
 }
