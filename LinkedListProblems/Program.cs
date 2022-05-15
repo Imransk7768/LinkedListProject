@@ -13,7 +13,7 @@ namespace LinkedListProblems
             Console.WriteLine(">>>>  Welcome to LisnkedList Project  <<<<");
             LinkedList list = new LinkedList();
             bool check = true;
-            Console.WriteLine("1. Display \n2. Add Data\n3. Add in Reverse\n4. Insert it Particular Position\n5. Delete First Element \n");
+            Console.WriteLine("1. Display \n2. Add Data\n3. Add in Reverse\n4. Insert it Particular Position\n5. Delete First Element\n6. Delete last Element \n");
             while (check)
             {
                 Console.WriteLine(" >>>>  Choose Option to Execute  <<<< ");
@@ -47,6 +47,9 @@ namespace LinkedListProblems
                         break;
                     case 5:
                         list.DeleteFirstNode();
+                        break;
+                    case 6:
+                        list.DeleteLastNode();
                         break;
                     default:
                         check = false;
