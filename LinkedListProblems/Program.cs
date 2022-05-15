@@ -39,17 +39,23 @@ namespace LinkedListProblems
                         list.AddInReverseList(56);
                         break;
                     case 4:
-                        list.Add(56);
+                        /*list.Add(56);
                         list.Add(70);
                         int a = list.Search(56);
                         list.InsertAtParticularPosition(a + 1, 30);
-                        list.Display();
+                        list.Display();*/
                         break;
                     case 5:
                         list.DeleteFirstNode();
                         break;
                     case 6:
                         list.DeleteLastNode();
+                        break;
+                    case 7:
+                        Console.WriteLine("Search Element in Node ");
+                        int ele = list.Search(30);
+                        Console.WriteLine("Elements Present : " + ele);
+                        list.Display();
                         break;
                     default:
                         check = false;

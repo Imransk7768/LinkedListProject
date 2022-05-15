@@ -81,7 +81,6 @@ namespace LinkedListProblems
             }
             return count;
         }
-
         public Node InsertAtParticularPosition(int position, int data)
         {
             Node newestNode = new Node(data);
@@ -135,6 +134,5 @@ namespace LinkedListProblems
             NewNode.next = null;
             return head;
         }
-
     }
 }
